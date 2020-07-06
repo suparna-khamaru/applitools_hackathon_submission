@@ -50,6 +50,18 @@ When both v1 test classes are run using both the above modern & traditional appr
 
 Analyse the generated test results in dashboard & local files
 
+### Steps to run traditional tests across different viewport sizes:
+
+1. Go to classes: TraditionalTestsV1 / TraditionalTestsV2
+2. In each of the class instance variables, update the below values for different viewport sizes and run junit tests each time. 
+
+  public static String browser = "Chrome";  
+  public static String viewport = "768x700";                              // 1200x700 | 768x700 | 500x700
+  public static String device = "Tablet";                                 // Laptop   | Tablet  | Mobile
+  public static RectangleSize viewportSize = new RectangleSize(768, 700); // 1200x700 | 768x700 | 500x700
+	
+3. After each test run, test report shall be locally generated/updated with latest test result in the txt file automatically. 
+
 ## Components of Test Framework
 
 ### 1. Tests
