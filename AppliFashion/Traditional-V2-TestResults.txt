@@ -1,0 +1,11 @@
+Task: 1, Test Name: Task 1, DOM Id: Cross-Device Elements Test, Browser: Chrome, Viewport: 1200x700, Device: Laptop, Status: Pass
+Task: 2, Test Name: Task 2, DOM Id: Filter Results, Browser: Chrome, Viewport: 1200x700, Device: Laptop, Status: Fail
+Task: 3, Test Name: Task 3, DOM Id: Product Details Test, Browser: Chrome, Viewport: 1200x700, Device: Laptop, Status: Fail
+----------------------------------
+Task: 1, Test Name: Task 1, DOM Id: Cross-Device Elements Test, Browser: Chrome, Viewport: 500x700, Device: Mobile, Status: Fail
+Task: 2, Test Name: Task 2, DOM Id: Filter Results, Browser: Chrome, Viewport: 500x700, Device: Mobile, Status: Fail
+Task: 3, Test Name: Task 3, DOM Id: Product Details Test, Browser: Chrome, Viewport: 500x700, Device: Mobile, Status: Fail
+----------------------------------
+Task: 1, Test Name: Task 1, DOM Id: Cross-Device Elements Test, Browser: Chrome, Viewport: 768x700, Device: Tablet, Status: Pass
+Task: 2, Test Name: Task 2, DOM Id: Filter Results, Browser: Chrome, Viewport: 768x700, Device: Tablet, Status: Fail
+Task: 3, Test Name: Task 3, DOM Id: Product Details Test, Browser: Chrome, Viewport: 768x700, Device: Tablet, Status: Fail
