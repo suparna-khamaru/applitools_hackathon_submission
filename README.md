@@ -1,13 +1,13 @@
 # Applitools Hackathon Submission
 
 This repository contains the following:
-- “TraditionalTestsV1”  — traditional Test code for V1 of the app
-- “TraditionalTestsV2”  — traditional Test code for V2 of the app 
-- “ModernTestsV1”       — UFG Test code for V1 of the app 
-- “ModernTestsV2”       — UFG Test code for V2 of the app 
-- Traditional-V1-TestResults.txt  //Placed in the root folder
-- Traditional-V2-TestResults.txt  //Placed in the root folder
-- README.md – Details about how to execute test project 
+- `TraditionalTestsV1`  —> traditional Test code for V1 of the app
+- `TraditionalTestsV2`  —> traditional Test code for V2 of the app 
+- `ModernTestsV1`     —> UFG Test code for V1 of the app 
+- `ModernTestsV2`      —> UFG Test code for V2 of the app 
+- `Traditional-V1-TestResults.txt`  -> Placed in the root folder
+- `Traditional-V2-TestResults.txt`  -> Placed in the root folder
+- `README.md` –> Details about how to execute test project 
 
 ## Aim
 
@@ -23,20 +23,20 @@ Goal of this test framework is to keep test-code:
 ## Design Patterns & Principles
 
 Each Test follows the following design patterns & principles in the test framework:
-- AAA Pattern (Arrange, Act, Assert)
-- POM Pattern (Page Object Model)
-- DRY (Do not Repeat Yourself)
+- `AAA Pattern` (Arrange, Act, Assert)
+- `POM Pattern` (Page Object Model)
+- `DRY`principle (Do not Repeat Yourself)
 
 ## Components of Test Framework
 
-- **Uses Junit for running the tests
+ Note:- **This test framework uses `Junit` for running the tests**
 
 ### 1. Tests
 
   Consists of:
-    - Task 1 
-    - Task 2
-    - Task 3
+    - Task 1 -> cross browser test
+    - Task 2 -> filter black shoe test
+    - Task 3 -> navigate to product details page test
 
 ### 2. Actions 
 
