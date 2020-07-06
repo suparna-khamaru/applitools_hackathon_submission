@@ -27,10 +27,30 @@ Each Test follows the following design patterns & principles in the test framewo
 - `POM Pattern` (Page Object Model)
 - `DRY`principle (Do not Repeat Yourself)
 
+## How to run these tests?
+
+Note: 
+**This test framework uses `Junit` for running the tests**
+
+### Steps to run tests in each test class:
+
+First run the v1 test classes using traditional & modern approaches:
+
+ 1. Go to any v1 test class (such as: TraditionalTestsV1, ModernTestsV1) 
+ 2. Right click on test class 
+ 3. Select `Run as` 
+ 4. Click on `Junit Test`
+
+When both v1 test classes are run using both the above modern & traditional approaches, run the below: 
+
+ 1. Go to any v2 test class (such as: TraditionalTestsV2, ModernTestsV2) 
+ 2. Right click on test class 
+ 3. Select `Run as` 
+ 4. Click on `Junit Test`
+
+Analyse the generated test results in dashboard & local files
+
 ## Components of Test Framework
-
- Note:- **This test framework uses `Junit` for running the tests**
-
 ### 1. Tests
 Consists of:
 - Task 1 -> cross browser test
