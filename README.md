@@ -76,10 +76,10 @@ In this test framework, `actions` folder covers the following reusuable function
 ### 3. Test Data management
 
 - #### Common Elements
-  Consists of all common strings used in test framework across modern & traditional tests
+  Consists of all the expected common strings used in test framework across modern & traditional tests
 
 - #### Common Driver Functions
-  Consists of all driver command calls with webpage identifiers
+  Consists of all the commonly used selenium web driver command calls with webpage identifiers
 
 ### 4. Set up 
 
