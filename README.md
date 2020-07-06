@@ -29,12 +29,14 @@ Each Test follows the following design patterns & principles in the test framewo
 
 ## Components of Test Framework
 
+- **Uses Junit for running the tests
+
 ### 1. Tests
 
-Consists of:
-- Test 1 
-- Test 2
-- Test 3
+  Consists of:
+    - Task 1 
+    - Task 2
+    - Task 3
 
 ### 2. Actions 
 
