@@ -51,7 +51,9 @@ When both v1 test classes are run using both the above modern & traditional appr
 Analyse the generated test results in dashboard & local files
 
 ## Components of Test Framework
+
 ### 1. Tests
+
 Consists of:
 - Task 1 -> cross browser test
 - Task 2 -> filter black shoe test
@@ -62,14 +64,16 @@ Consists of:
 Usually consists of logics and test-step function calls.
 
 In this test framework, `actions` folder covers the following reusuable function calls:
+
 - Filter black shoe in home page 
   - Handles test for all viewport sizes such as: 
     - Laptop, 
     - Tablet  
     - Mobile
+    
 - Tap on first black shoe & navigate to its details page
 
-### 3. Elements
+### 3. Test Data management
 
 - #### Common Elements
   Consists of all common strings used in test framework across modern & traditional tests
@@ -80,7 +84,8 @@ In this test framework, `actions` folder covers the following reusuable function
 ### 4. Set up 
 
 Consists of 
-- Browser configurations
+
+- Browser configurations 
 - Open Eyes  
 - Check by Region
 - Check Full Window
