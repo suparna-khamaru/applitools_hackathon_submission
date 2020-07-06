@@ -1,5 +1,14 @@
 # Applitools Hackathon Submission
 
+This repository contains the following:
+- “TraditionalTestsV1”  — traditional Test code for V1 of the app
+- “TraditionalTestsV2”  — traditional Test code for V2 of the app 
+- “ModernTestsV1”       — UFG Test code for V1 of the app 
+- “ModernTestsV2”       — UFG Test code for V2 of the app 
+- Traditional-V1-TestResults.txt  //Placed in the root folder
+- Traditional-V2-TestResults.txt  //Placed in the root folder
+- README.md – Details about how to execute test project 
+
 ## Aim
 
 Goal of this test framework is to keep test-code:
@@ -20,14 +29,14 @@ Each Test follows the following design patterns & principles in the test framewo
 
 ## Components of Test Framework
 
-### Tests
+### 1. Tests
 
 Consists of:
 - Test 1 
 - Test 2
 - Test 3
 
-### Actions 
+### 2. Actions 
 
 Usually consists of logics and test-step function calls.
 
@@ -39,7 +48,7 @@ In this test framework, `actions` folder covers the following reusuable function
     - Mobile
 - Tap on first black shoe & navigate to its details page
 
-### Elements
+### 3. Elements
 
 - #### Common Elements
   Consists of all common strings used in test framework across modern & traditional tests
@@ -47,7 +56,7 @@ In this test framework, `actions` folder covers the following reusuable function
 - #### Common Driver Functions
   Consists of all driver command calls with webpage identifiers
 
-### Set up 
+### 4. Set up 
 
 Consists of 
 - Browser configurations
@@ -55,6 +64,3 @@ Consists of
 - Check by Region
 - Check Full Window
 - Test Report Generator
-
-
-
