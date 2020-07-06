@@ -32,11 +32,10 @@ Each Test follows the following design patterns & principles in the test framewo
  Note:- **This test framework uses `Junit` for running the tests**
 
 ### 1. Tests
-
-  Consists of:
-    - Task 1 -> cross browser test
-    - Task 2 -> filter black shoe test
-    - Task 3 -> navigate to product details page test
+Consists of:
+- Task 1 -> cross browser test
+- Task 2 -> filter black shoe test
+- Task 3 -> navigate to product details page test
 
 ### 2. Actions 
 
