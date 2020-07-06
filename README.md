@@ -12,13 +12,13 @@ This repository contains the following:
 ## Aim
 
 Goal of this test framework is to keep test-code:
+- test visually using `Eyes` framework
 - simple
 - short
 - readable
 - optimised
 - maintainable
-- avoid duplication
-- reusable
+- reusable (to avoid test code duplication)
 
 ## Design Patterns & Principles
 
