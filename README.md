@@ -31,8 +31,19 @@ Each Test follows the following design patterns & principles in the test framewo
 
 Note: 
 **This test framework uses `Junit` for running the tests**
+Did not integrate with maven
 
 ### Steps to run tests in each test class:
+
+#### Set up in ECLIPSE:
+
+- Import the test project in Eclipse IDE - Used JRE: Java SE 8 [1.8.0_201] & also works fine with Java SE 14
+
+- Add external JAR files such as `Selenium`, `Junit 5`, `Eyes` into your project
+	(Build path -> Configure Build path -> 'Libraries' tab -> "Add External Jars" button -> Add all jars -> Apply & close)
+	
+	Download the selenium & eyes jars from here: https://jar-download.com/artifact-search/eyes-selenium-java3 
+	Download JUnit5 jars from here: https://github.com/junit-team/junit5/releases/tag/r5.6.2
 
 First run the v1 test classes using traditional & modern approaches:
 
@@ -61,8 +72,6 @@ Analyse the generated test results in dashboard & local files
   public static RectangleSize viewportSize = new RectangleSize(768, 700); // 1200x700 | 768x700 | 500x700
 	
 3. After each test run, test report shall be locally generated/updated with latest test result in the txt file automatically. 
-
-
 
 ## Components of the Test Framework
 
