@@ -69,7 +69,7 @@ public class TraditionalTestsV1 {
 				element.appName, 
 				element.task1, 
 				viewportSize);
-	
+
 		base.checkFullWindow(element.test1, eyes);
 
 		Assert.assertTrue(base.generateReport(fileName, 1, 
@@ -87,10 +87,10 @@ public class TraditionalTestsV1 {
 				viewportSize);
 
 		home.filterBlackShoe(driver);
-		
+
 		base.checkRegion(driverFunction.productGrid(), 
 				element.test2, eyes);
-	
+
 		Assert.assertTrue(base.generateReport(fileName, 2, 
 				element.test2, driverFunction.blackShoesXpath, 
 				browser, viewport, device, 
@@ -106,7 +106,7 @@ public class TraditionalTestsV1 {
 				viewportSize);
 
 		home.tapOnFirstBlackShoe(driver);
-		
+
 		base.checkFullWindow(element.test3, eyes);
 
 		Assert.assertTrue(base.generateReport(fileName, 3, 
@@ -127,7 +127,7 @@ public class TraditionalTestsV1 {
 		driver.quit();
 		TestResultsSummary allTestResults = runner.getAllTestResults();
 		System.out.println(allTestResults);
-		
+
 		base.enterLineInReport(fileName);
 	}
 }

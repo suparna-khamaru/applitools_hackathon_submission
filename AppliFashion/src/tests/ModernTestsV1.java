@@ -1,5 +1,7 @@
 package tests;
 
+import static org.junit.Assert.assertTrue;
+
 import org.junit.After;
 import org.junit.AfterClass;
 import org.junit.Before;
@@ -31,10 +33,10 @@ public class ModernTestsV1 {
 	private static Eyes eyes;
 	private static BatchInfo batch;
 	private static WebDriver driver;
-	
+
 	private static String modernBatchName = "UFG Hackathon V1";
 	public static RectangleSize viewportSize = new RectangleSize(800, 600);
-	
+
 	CommonActions home = new CommonActions();
 	CommonElements element = new CommonElements();
 	WebDriverElements driverFunction = new WebDriverElements();
@@ -42,7 +44,7 @@ public class ModernTestsV1 {
 
 	@BeforeClass
 	public static void setUpBeforeClass() throws Exception {
-		
+
 		batch = new BatchInfo(modernBatchName);
 		runner = new VisualGridRunner(10);
 		driver = new ChromeDriver();
@@ -50,62 +52,70 @@ public class ModernTestsV1 {
 
 	@Before
 	public void setUp() throws Exception {
-		
+
 		eyes = new Eyes(runner);
 		eyes.setApiKey(element.apiKey); 
 		eyes.setBatch(batch);
 		base.setUpBrowsers(eyes, batch);		
-		
+
 		driver.get(element.siteUrl_v1);
 	}
 
 	@Test
-	public void task_1() {
-		
+	public void task_1() throws AssertionError {
+
 		eyes.open(driver, 
 				element.appName, 
 				element.task1, 
 				viewportSize);
-		
+
 		base.checkFullWindow(element.test1, eyes);
+
+		assertTrue(home.verifySearchBar(driver));
 	}
 
 	@Test
 	public void task_2() {
-		
+
 		eyes.open(driver, 
 				element.appName, 
 				element.task2, 
 				viewportSize);
-		
+
 		home.filterBlackShoe(driver);		
 		base.checkRegion(driverFunction.productGrid(), 
 				element.test2, eyes);
+
+		assertTrue(home
+				.filteredCountOfBlackShoes(driver)
+				.size() == 2);
 	}
-	
+
 	@Test
 	public void task_3() {
-		
+
 		eyes.open(driver, 
 				element.appName, 
 				element.task3, 
 				viewportSize);
-		
+
 		home.tapOnFirstBlackShoe(driver);
 		base.checkFullWindow(element.test3, eyes);
+
+		assertTrue(home.verifyProductDetails(driver));
 	}
-	
+
 	@After
 	public void tearDown() throws Exception {
-		
+
 		eyes.closeAsync();
 		eyes.abortAsync();
 		eyes.abortIfNotClosed();
 	}
-	
+
 	@AfterClass
 	public static void tearDownAfterClass() throws Exception {
-		
+
 		driver.quit();
 		TestResultsSummary allTestResults = runner.getAllTestResults();
 		System.out.println(allTestResults);

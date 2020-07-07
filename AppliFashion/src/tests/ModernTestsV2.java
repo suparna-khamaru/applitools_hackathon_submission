@@ -37,7 +37,7 @@ public class ModernTestsV2 {
 	private static WebDriver driver;
 	private static String modernBatchName = "UFG Hackathon V2";
 	public static RectangleSize viewportSize = new RectangleSize(800, 600);
-	
+
 	CommonActions home = new CommonActions();
 	CommonElements  element = new CommonElements();
 	WebDriverElements driverFunction = new WebDriverElements();
@@ -49,7 +49,7 @@ public class ModernTestsV2 {
 		runner = new VisualGridRunner(10);
 		driver = new ChromeDriver();
 	}
-	
+
 	@Before
 	public void setUp() throws Exception {
 		eyes = new Eyes(runner);
@@ -57,66 +57,66 @@ public class ModernTestsV2 {
 		eyes.setBatch(batch);
 		base.setUpBrowsers(eyes, batch);
 		eyes.setMatchLevel(MatchLevel.STRICT);
-		
+
 		driver.get(element.siteUrl_v2);
 	}
 
 	@Test
 	public void task_1() {	
-		
+
 		eyes.open(driver, 
 				element.appName, 
 				element.task1, 
 				viewportSize);
-		
+
 		base.checkFullWindow(element.test1, eyes);
-		
+
 		assertTrue(home.verifySearchBar(driver));
 	}
 
-	@Test
+	@Test( )
 	public void task_2() {
-		
+
 		eyes.open(driver, 
 				element.appName, 
 				element.task2, 
 				viewportSize);
-		
+
 		home.filterBlackShoe(driver);
 		base.checkRegion(driverFunction.productGrid(), 
 				element.test2, eyes);
-		
+
 		assertTrue(home
 				.filteredCountOfBlackShoes(driver)
 				.size() == 2);
 	}
-	
+
 	@Test
 	public void task_3() {
-		
+
 		eyes.open(driver, 
 				element.appName, 
 				element.task3, 
 				viewportSize);
-		
+
 		home.tapOnFirstBlackShoe(driver);
 		base.checkFullWindow(element.test3, eyes);
-		
+
 		assertTrue(home.verifyProductDetails(driver));
 	}
-	
+
 	@After
 	public void tearDown() throws Exception {
 		eyes.closeAsync();
 		eyes.abortAsync();
 		eyes.abortIfNotClosed();
 	}
-	
+
 	@AfterClass
 	public static void tearDownAfterClass() throws Exception {
+		driver.quit();
 		TestResultsSummary allTestResults = runner.getAllTestResults();
 		System.out.println(allTestResults);
-		driver.quit();
 	}
 
 }
