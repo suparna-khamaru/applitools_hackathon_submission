@@ -62,20 +62,22 @@ Analyse the generated test results in dashboard & local files
 	
 3. After each test run, test report shall be locally generated/updated with latest test result in the txt file automatically. 
 
-## Components of Test Framework
+
+
+## Components of the Test Framework
 
 ### 1. Tests
 
 Consists of:
 - Task 1 -> cross browser test
 - Task 2 -> filter black shoe test
-- Task 3 -> navigate to product details page test
+- Task 3 -> product details test
 
 ### 2. Actions 
 
-Usually consists of logics and test-step function calls.
+Consists of logics and test-step function calls.
 
-In this test framework, `actions` folder covers the following reusuable function calls:
+In this test framework, `actions` package covers the following reusuable function calls:
 
 - Filter black shoe in home page 
   - Handles test for all viewport sizes such as: 
@@ -91,14 +93,14 @@ In this test framework, `actions` folder covers the following reusuable function
   Consists of all the expected common strings used in test framework across modern & traditional tests
 
 - #### Common Driver Functions
-  Consists of all the commonly used selenium web driver command calls with webpage identifiers
+  Consists of all the commonly used selenium web driver command calls with webpage identifiers used in modern & traditional tests
 
 ### 4. Set up 
 
 Consists of 
 
 - Browser configurations 
-- Open Eyes  
-- Check by Region
-- Check Full Window
+- Check 
+	- by Region
+	- Full Window
 - Test Report Generator
