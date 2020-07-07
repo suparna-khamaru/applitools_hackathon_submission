@@ -39,7 +39,7 @@ Note:
 #### Set up in ECLIPSE:
 
 - Import the test project in Eclipse IDE 
-- Used JRE: Java SE 10 & Java SE 14
+- Used JRE: `Java SE 14`
 
 - Add external JAR files such as `Selenium`, `Junit 5`, `Eyes` into your project
 	(Build path -> Configure Build path -> 'Libraries' tab -> "Add External Jars" button -> Add all jars -> Apply & close)
