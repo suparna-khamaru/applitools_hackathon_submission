@@ -72,7 +72,7 @@ public class ModernTestsV2 {
 		
 		base.checkFullWindow(element.test1, eyes);
 		
-		assertFalse(home.verifySearchBar(driver));
+		assertTrue(home.verifySearchBar(driver));
 	}
 
 	@Test
@@ -84,7 +84,6 @@ public class ModernTestsV2 {
 				viewportSize);
 		
 		home.filterBlackShoe(driver);
-		
 		base.checkRegion(driverFunction.productGrid(), 
 				element.test2, eyes);
 		
@@ -102,7 +101,6 @@ public class ModernTestsV2 {
 				viewportSize);
 		
 		home.tapOnFirstBlackShoe(driver);
-		
 		base.checkFullWindow(element.test3, eyes);
 		
 		assertTrue(home.verifyProductDetails(driver));
