@@ -82,6 +82,15 @@ Consists of:
 	- product details test 
 	- Fails the test, when product details such as shoe size & large image is incorrectly displayed
 
+
+Other features of JUnit utilised in test classes are:
+
+- @BeforeClass  - to run `before all tests` in the class 
+- @AfterClass   - to run `after all tests` in the class 
+- @Before 	- to run `before every test` in the class
+- @After	- to run `after every test` in the class 
+
+
 ### 2. Actions 
 
 Consists of beautiful `reusable logics`.
