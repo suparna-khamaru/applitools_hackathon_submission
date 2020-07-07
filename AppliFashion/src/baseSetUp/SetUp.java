@@ -69,6 +69,10 @@ public class SetUp {
 		return comparisonResult;
 	}
 	
+	/**
+	 * add a line after each testclass is run
+	 * @param fileName 	
+	 */
 	public void enterLineInReport(String fileName) {
 		
 	    try(var writer = new BufferedWriter(new FileWriter(fileName, true))){
