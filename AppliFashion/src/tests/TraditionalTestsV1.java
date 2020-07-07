@@ -33,18 +33,17 @@ public class TraditionalTestsV1 {
 	private static BatchInfo batch;
 	private static WebDriver driver;
 	public static String batchName = "Traditional V1";
+	public static String fileName = "Traditional-V1-TestResults.txt";
+
+	public static String browser = "Chrome";
+	public static String viewport = "768x700"; 	// 1200x700 	768x700 	500x700
+	public static String device = "Tablet"; 	// Laptop 		Tablet 		Mobile
+	public static RectangleSize viewportSize = new RectangleSize(768, 700);
 
 	CommonActions home = new CommonActions();
 	CommonElements element = new CommonElements();
 	static SetUp base = new SetUp();
 	WebDriverElements driverFunction = new WebDriverElements();
-
-	public static String browser = "Chrome";
-	public static String viewport = "768x700"; // 1200x700 768x700 500x700
-	public static String device = "Tablet"; // Laptop Tablet Mobile
-
-	public static RectangleSize viewportSize = new RectangleSize(768, 700);
-	public static String fileName = "Traditional-V1-TestResults.txt";
 
 	@BeforeClass
 	public static void setUpBeforeClass() throws Exception {
@@ -74,7 +73,8 @@ public class TraditionalTestsV1 {
 		base.checkFullWindow(element.test1, eyes);
 
 		Assert.assertTrue(base.generateReport(fileName, 1, 
-				element.task1, element.test1, browser, viewport, device, 
+				element.test1, driverFunction.searchBarId, 
+				browser, viewport, device, 
 				home.verifySearchBar(driver)));
 	}
 
@@ -92,7 +92,8 @@ public class TraditionalTestsV1 {
 				element.test2, eyes);
 	
 		Assert.assertTrue(base.generateReport(fileName, 2, 
-				element.task2, element.test2, browser, viewport, device, 
+				element.test2, driverFunction.blackShoesXpath, 
+				browser, viewport, device, 
 				home.filteredCountOfBlackShoes(driver).size()==2));
 	}
 
@@ -109,7 +110,8 @@ public class TraditionalTestsV1 {
 		base.checkFullWindow(element.test3, eyes);
 
 		Assert.assertTrue(base.generateReport(fileName, 3, 
-				element.task3, element.test3, browser, viewport, device, 
+				element.test3, driverFunction.shoeSizeXpath, 
+				browser, viewport, device, 
 				home.verifyProductDetails(driver)));
 	}
 
