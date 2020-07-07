@@ -16,6 +16,9 @@ public class CommonActions {
 	WebDriverElements find = new WebDriverElements();
 	CommonElements commonElement = new CommonElements();
 
+	/**
+	 * Filter black shoe in laptop, tablet & mobile view
+	 */
 	public void filterBlackShoe(WebDriver driver) {
 		
 		wait = new WebDriverWait(driver, 20);
@@ -35,6 +38,11 @@ public class CommonActions {
 		find.firstBlackShoe(driver).click();
 	}
 	
+	/**
+	 * @return 
+	 * true -> if search is displayed appropriately
+	 * false -> if otherwise
+	 */
 	public boolean verifySearchBar(WebDriver driver) {
 		
 		Boolean searchIcon = find
@@ -45,15 +53,24 @@ public class CommonActions {
 				.searchBar(driver)
 				.isDisplayed() ? true : false;
 		
-		return searchIcon && searchBar ? false : true;
+		Boolean abc = (searchIcon && searchBar) ? false : true;
+		System.out.println(abc);
+		
+		return (searchIcon && searchBar) ? false : true;
 	}
 	
+	/**
+	 * @return list of shoes displayed after filtering 'Black'
+	 */
 	public List<WebElement> filteredCountOfBlackShoes(WebDriver driver) {
 		
 		List<WebElement> shoes = find.filteredBlackShoes(driver);
 		return shoes;
 	}
 	
+	/**
+	 * @return true only when size & image is displayed correctly
+	 */
 	public boolean verifyProductDetails(WebDriver driver) {
 				
 		Boolean smallSize = find
