@@ -1,12 +1,12 @@
-Task: 1, Test Name: Task 1, DOM Id: Cross-Device Elements Test, Browser: Chrome, Viewport: 1200x700, Device: Laptop, Status: Pass
-Task: 2, Test Name: Task 2, DOM Id: Filter Results, Browser: Chrome, Viewport: 1200x700, Device: Laptop, Status: Pass
-Task: 3, Test Name: Task 3, DOM Id: Product Details Test, Browser: Chrome, Viewport: 1200x700, Device: Laptop, Status: Pass
+Task: 1, Test Name: Cross-Device Elements Test, DOM Id: INPUTtext____42, Browser: Chrome, Viewport: 1200x700, Device: Laptop, Status: Pass
+Task: 2, Test Name: Filter Results, DOM Id: //*[@id='product_grid']/divs, Browser: Chrome, Viewport: 1200x700, Device: Laptop, Status: Pass
+Task: 3, Test Name: Product Details Test, DOM Id: //*[@id='DIV__customsele__92']/div/span, Browser: Chrome, Viewport: 1200x700, Device: Laptop, Status: Pass
 ----------------------------------
-Task: 1, Test Name: Task 1, DOM Id: Cross-Device Elements Test, Browser: Chrome, Viewport: 500x700, Device: Mobile, Status: Pass
-Task: 2, Test Name: Task 2, DOM Id: Filter Results, Browser: Chrome, Viewport: 500x700, Device: Mobile, Status: Pass
-Task: 3, Test Name: Task 3, DOM Id: Product Details Test, Browser: Chrome, Viewport: 500x700, Device: Mobile, Status: Pass
+Task: 1, Test Name: Cross-Device Elements Test, DOM Id: INPUTtext____42, Browser: Chrome, Viewport: 500x700, Device: Mobile, Status: Pass
+Task: 2, Test Name: Filter Results, DOM Id: //*[@id='product_grid']/div, Browser: Chrome, Viewport: 500x700, Device: Mobile, Status: Pass
+Task: 3, Test Name: Product Details Test, DOM Id: //*[@id='DIV__customsele__92']/div/span, Browser: Chrome, Viewport: 500x700, Device: Mobile, Status: Pass
 ----------------------------------
-Task: 1, Test Name: Task 1, DOM Id: Cross-Device Elements Test, Browser: Chrome, Viewport: 768x700, Device: Tablet, Status: Pass
-Task: 2, Test Name: Task 2, DOM Id: Filter Results, Browser: Chrome, Viewport: 768x700, Device: Tablet, Status: Pass
-Task: 3, Test Name: Task 3, DOM Id: Product Details Test, Browser: Chrome, Viewport: 768x700, Device: Tablet, Status: Pass
+Task: 1, Test Name: Cross-Device Elements Test, DOM Id: INPUTtext____42, Browser: Chrome, Viewport: 768x700, Device: Tablet, Status: Pass
+Task: 2, Test Name: Filter Results, DOM Id: //*[@id='product_grid']/div, Browser: Chrome, Viewport: 768x700, Device: Tablet, Status: Pass
+Task: 3, Test Name: Product Details Test, DOM Id: //*[@id='DIV__customsele__92']/div/span, Browser: Chrome, Viewport: 768x700, Device: Tablet, Status: Pass
 ----------------------------------
