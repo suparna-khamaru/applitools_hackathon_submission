@@ -27,10 +27,10 @@ Each Test follows the following design patterns & principles in the test framewo
 - `POM Pattern` (Page Object Model)
 - `DRY`principle (Do not Repeat Yourself)
 
-## How to run these tests?
+## Instructions: How to run the tests?
 
 Note: 
-**This test framework uses `Junit` for running the tests**
+**This test framework uses `Junit5` for running the tests**
 
 - Did not integrate with maven
 
@@ -39,14 +39,17 @@ Note:
 #### Set up in ECLIPSE:
 
 - Import the test project in Eclipse IDE 
-- Used JRE: `Java SE 14`
+
+- Used JRE: `JAVA SE 14` (Older version of JRE may not be compatible with this test project)
+
+	(In project -> Right click on "JRE System Library" -> Select 'Properties' -> Select "Environment" button -> Select JRESE-14 in the list -> Check the same on the right side of the compatible JREs window -> Apply and close -> Select radio button "Execution Environment" and choose JRE14 again from the list -> Apply & close)
 
 - Add external JAR files such as `Selenium`, `Junit 5`, `Eyes` into your project
 	(Build path -> Configure Build path -> 'Libraries' tab -> "Add External Jars" button -> Add all jars -> Apply & close)
 	
 	Download the selenium & eyes jars from here: https://jar-download.com/artifact-search/eyes-selenium-java3 
 	
-	Download `JUnit5 jars`: I have used Junit5 plugin  (If JUnit5 is not detected and project continues to undetect JUnit annotations, then mouse hover over any of the Junit annotations in test classes and select "Fix project setup" and add whatever Junit version is possibly available in local machine)
+	Download `JUnit5 jars`: I have used Junit5 plugin (make sure to crosscheck presence of org.hamcrest.core jar exists in junit5 jars) 
 
 First run the v1 test classes using traditional & modern approaches:
 
