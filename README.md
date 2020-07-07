@@ -31,19 +31,22 @@ Each Test follows the following design patterns & principles in the test framewo
 
 Note: 
 **This test framework uses `Junit` for running the tests**
-Did not integrate with maven
+
+- Did not integrate with maven
 
 ### Steps to run tests in each test class:
 
 #### Set up in ECLIPSE:
 
-- Import the test project in Eclipse IDE - Used JRE: Java SE 8 [1.8.0_201] & also works fine with Java SE 14
+- Import the test project in Eclipse IDE 
+- Used JRE: Java SE 10 & Java SE 14
 
 - Add external JAR files such as `Selenium`, `Junit 5`, `Eyes` into your project
 	(Build path -> Configure Build path -> 'Libraries' tab -> "Add External Jars" button -> Add all jars -> Apply & close)
 	
 	Download the selenium & eyes jars from here: https://jar-download.com/artifact-search/eyes-selenium-java3 
-	Download JUnit5 jars from here: https://github.com/junit-team/junit5/releases/tag/r5.6.2
+	
+	Download `JUnit5 jars`: I have used Junit5 plugin  (If JUnit5 is not detected and project continues to undetect JUnit annotations, then mouse hover over any of the Junit annotations in test classes and select "Fix project setup" and add whatever Junit version is possibly available in local machine)
 
 First run the v1 test classes using traditional & modern approaches:
 
@@ -66,11 +69,11 @@ Analyse the generated test results in dashboard & local files
 1. Go to classes: TraditionalTestsV1 / TraditionalTestsV2
 2. In each of the class instance variables, update the below values for different viewport sizes and run junit tests each time. 
 
-  public static String browser = "Chrome";  
-  public static String viewport = "768x700";                              // 1200x700 | 768x700 | 500x700
-  public static String device = "Tablet";                                 // Laptop   | Tablet  | Mobile
-  public static RectangleSize viewportSize = new RectangleSize(768, 700); // 1200x700 | 768x700 | 500x700
-	
+public static String browser = "Chrome";  
+public static String viewport = "768x700";         // 1200x700 | 768x700 | 500x700
+public static String device = "Tablet";            // Laptop   | Tablet  | Mobile
+public static RectangleSize viewportSize = new RectangleSize(768, 700);  // 1200x700 | 768x700 | 500x700
+
 3. After each test run, test report shall be locally generated/updated with latest test result in the txt file automatically. 
 
 ## Components of the Test Framework
@@ -106,8 +109,7 @@ Consists of beautiful `reusable logics`.
 
 In this test framework, `actions` package covers the following reusuable function calls:
 
-- `Filter black shoe` in home page 
-  - Handles test for all viewport sizes such as: 
+- `Filter black shoe` in home page is correctly working for all viewport sizes such as: 
     - Laptop
     - Tablet  
     - Mobile
