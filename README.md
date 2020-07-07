@@ -69,9 +69,18 @@ Analyse the generated test results in dashboard & local files
 ### 1. Tests
 
 Consists of:
-- Task 1 -> cross browser test
-- Task 2 -> filter black shoe test
-- Task 3 -> product details test
+
+- Task 1 
+	- cross browser test
+	- Fails the test, when search icon or search bar is incorrectly displayed in any viewport size
+
+- Task 2 
+	- filter black shoe test
+	- Fails the test, when count of black shoes exceeds 2 (In ideal case, this should be mocked for accuracy)
+
+- Task 3 
+	- product details test 
+	- Fails the test, when product details such as shoe size & large image is incorrectly displayed
 
 ### 2. Actions 
 
@@ -88,9 +97,9 @@ In this test framework, `actions` package covers the following reusuable functio
 - Tap on first black shoe & navigate to its details page
 
 - Verify `search bar / search icon` is correctly displayed in: 
-	- Laptop
-    	- Tablet  
-    	- Mobile
+    - Laptop
+    - Tablet  
+    - Mobile
 
 - Verify the `count` of black shoes displayed on filtering black shoe
 
@@ -98,11 +107,11 @@ In this test framework, `actions` package covers the following reusuable functio
 
 ### 3. Test Data management
 
-- #### Common Elements
-  Consists of all the expected common strings used in test framework across modern & traditional tests
+#### Common Elements
+  Consists of all the `expected common strings` used in test framework across modern & traditional tests
 
-- #### Common Driver Functions
-  Consists of all the commonly used selenium web driver command calls with webpage identifiers used in modern & traditional tests
+#### Common Driver Functions
+  Consists of all the commonly used `selenium web driver command calls with webpage identifiers` used in modern & traditional tests
 
 ### 4. Set up 
 
