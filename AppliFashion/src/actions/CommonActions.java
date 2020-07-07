@@ -53,9 +53,6 @@ public class CommonActions {
 				.searchBar(driver)
 				.isDisplayed() ? true : false;
 		
-		Boolean abc = (searchIcon && searchBar) ? false : true;
-		System.out.println(abc);
-		
 		return (searchIcon && searchBar) ? false : true;
 	}
 	
