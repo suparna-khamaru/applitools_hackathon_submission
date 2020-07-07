@@ -75,17 +75,26 @@ Consists of:
 
 ### 2. Actions 
 
-Consists of logics and test-step function calls.
+Consists of beautiful `reusable logics`.
 
 In this test framework, `actions` package covers the following reusuable function calls:
 
-- Filter black shoe in home page 
+- `Filter black shoe` in home page 
   - Handles test for all viewport sizes such as: 
-    - Laptop, 
+    - Laptop
     - Tablet  
     - Mobile
     
 - Tap on first black shoe & navigate to its details page
+
+- Verify `search bar / search icon` is correctly displayed in: 
+	- Laptop
+    	- Tablet  
+    	- Mobile
+
+- Verify the `count` of black shoes displayed on filtering black shoe
+
+- Verify the default `shoe-size` & `large shoe image` displayed in product details page
 
 ### 3. Test Data management
 
