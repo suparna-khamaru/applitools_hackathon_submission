@@ -16,11 +16,6 @@ public class CommonActions {
 	WebDriverElements find = new WebDriverElements();
 	CommonElements commonElement = new CommonElements();
 
-	public void FilterBlackShoe(WebDriver driver) {
-		
-		filterBlackShoe(driver);
-	}
-
 	public void filterBlackShoe(WebDriver driver) {
 		
 		wait = new WebDriverWait(driver, 20);
