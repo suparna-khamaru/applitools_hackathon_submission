@@ -1,5 +1,9 @@
 package elements;
 
+/**
+ * @author suparna_khamaru
+ *
+ */
 public class CommonElements {
 
 	public static String browser = "Chrome";
