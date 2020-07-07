@@ -51,6 +51,17 @@ Note:
 	
 	Download `JUnit5 jars`: I have used Junit5 plugin (make sure to crosscheck presence of org.hamcrest.core jar exists in junit5 jars) 
 
+### Run tests with any of the below mentioned 2 approaches:
+
+#### 1st Approach 
+
+1. Go to "AllTestSuite" test class
+2. Right click on the test class "AllTestSuite"
+3. Select `Run as` 
+4. Click on `Junit Test`
+
+#### 2nd Approach
+
 First run the v1 test classes using traditional & modern approaches:
 
  1. Go to any v1 test class (such as: TraditionalTestsV1, ModernTestsV1) 
