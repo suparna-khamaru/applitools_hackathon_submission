@@ -49,7 +49,9 @@ Note:
 	
 	Download the selenium & eyes jars from here: https://jar-download.com/artifact-search/eyes-selenium-java3 
 	
-	Download `JUnit5 jars`: I have used Junit5 plugin (make sure to crosscheck presence of org.hamcrest.core jar exists in junit5 jars) 
+	Download `JUnit5 jars`: 
+	Add JUnit5 library to build path (make sure to crosscheck presence of org.hamcrest.core jar exists in junit5 jars) 
+	(If JUnit5 is undetected, hover over any @Test annotation in test class, and click on "Add Junit5 library to Build path")
 
 ### Run tests with any of the below mentioned 2 approaches:
 
