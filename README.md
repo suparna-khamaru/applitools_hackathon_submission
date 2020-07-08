@@ -158,3 +158,7 @@ Consists of
 	- by Region
 	- Full Window
 - Test Report Generator
+
+
+DASHBOARD URL for Test Results:
+https://eyes.applitools.com/app/test-results/00000251808165066526/?accountId=h-V_AQvpwESjB4eFLnNTtg~~
